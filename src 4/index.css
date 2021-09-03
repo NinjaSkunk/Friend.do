@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+.App {	
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* Landing Page */
+ h1{
+    font-size: 40px;
+} 
+
+.title {
+	margin-right:auto;
+	font-family: 'Rampart One', cursive;
+}
+
+
+.options {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	font-family: 'Rampart One', cursive;
+	margin:9px;
+	cursor: pointer;
+}
+
+.vl {
+  border-left: 2px solid black;
+  height: 35px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.text_btn {
+	font-family: 'Rampart One', cursive;
+	padding:0;
+	border:none;
+	background: none;
+}
+
+.div_one {
+	background-color:#f0aa96;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	font-family: 'Raleway', sans-serif;
+}
+
+.div_one_text{
+	/* background-color:#fcac97; */
+	background-color:#ffb49e;
+	margin-left:auto;
+	font-size: 90px;
+	text-align: center;
+}
+
+.picture{
+	width:35%;
+	height:35%;
+}
+
+.div_button{
+	border: none;
+	padding: 10px 20px;
+	margin: 5px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 15px;
+}
+
+.div_two {
+	background-color:#96aff0;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	font-family: 'Raleway', sans-serif;
+}
+
+.div_two_text{
+	/* background-color:#97a8fc; */
+	/* background-color:#a1b9f7; */
+	background-color:#a2bbfa;
+	margin-right:auto;
+	font-size: 90px;
+	text-align: center;
+}
+
+.div_three {
+	
+	background-color:#96f0d6;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	font-family: 'Raleway', sans-serif;
+}
+
+.div_three_text{
+	background-color:#a0fc97;
+	margin-left:auto;
+	font-size: 90px;
+	text-align: center;
+}
+
+.picture2{
+	width:28%;
+	height:28%;
+}
+
+
+/* React Calendar */
+.calendar {
+  box-sizing: border-box;
+  font-size: 1rem;
+  max-width: 400px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.calendar .header {
+  padding:4px;
+  background-color:lightblue;
+  text-align: center;
+  min-height: 2rem;
+  line-height: 2rem;
+  color: black;
+  font-weight: 700;
+  display: flex;
+}
+
+.calendar .day-names {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.calendar .body {
+  border: 1px solid var(--light-blue);
+}
+
+.calendar .header .previous {
+  flex: 1;
+  text-align: left;
+  margin-left: 1rem;
+  cursor:pointer;
+}
+
+.calendar .header .next {
+  flex: 1;
+  text-align: right;
+  margin-right: 1rem;
+  cursor:pointer;
+}
+
+.calendar .week {
+  background-color: white;
+  width: calc(100% / 7);
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--black);
+  font-weight: 400;
+}
+.calendar .week div {
+  width: 100%;
+}
+
+.calendar .day {
+  position: relative;
+  width: calc(100% / 7);
+  height: 44px;
+  display: inline-block;
+  background-color: white;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  z-index: 1;
+  text-align: center;
+}
+
+.calendar .day div {
+  width: 54px;
+  height: 44px;
+  position: relative;
+  color: var(--black);
+  z-index: 100;
+  line-height: 44px;
+}
+
+.calendar .day div.before {
+  color:grey;
+  opacity:40%
+}
+
+.calendar .day div.selected {
+  background-color:#9c1322;
+  color: white;
+  font-weight: bold;
+}
+
+.calendar .day div.today {
+  font-weight: bold;
+  background-color:#d6d4d4;
+}
+
+/* Day Schedule */
+
+.day_div{
+	font-family: 'IBM Plex Sans Arabic', sans-serif;
+	margin-left:20px;
+}
+
+.checkbox{
+	margin-top:5px;
+	margin-left:3px;
+}
+
+.event_div{
+	display:flex;
+	flex-direction:row;	
+}
+
+.input_box{
+	margin-left:8px;
+	z-index:1;
+}
+
+.add_event{
+	margin-top:5px;
+}
+
+table{
+	font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+
+.time{
+	border: 1px dotted black;
+	padding:3px;	
+}
+
+.day_btn{
+	width:91%;
+	background-color:gray;
+	opacity:15%;
+}
+
+.booked{
+	width:91%;
+	background-color:#26C6DA;
+	padding-left:10px;
+	font-weight:500;
+	font-size:20px;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.black_btn{
+	font-size:15px;
+	font-weight:500;
+	background:black;
+	color:white;
+	border:none;
+	padding: 5px 10px;
+	border-radius:5px;
+}
+
+.black_btn_margin{
+	margin:5px;
+	font-size:15px;
+	font-weight:500;
+	background:black;
+	color:white;
+	border:none;
+	padding: 5px 10px;
+	border-radius:5px;
+}
+
+
+/* Regular Calendar */
+ /* .container{
+	box-sizing: border-box;
+	width:100%;
+	height:100vh;
+	background-color:#12121f;
+	color:#eee;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font-family: 'Raleway', sans-serif;
+}
+
+.calendar{
+	width: 34rem;
+	height: 39rem;
+	background-color: #222227;
+	box-shadow: 0 0.5rem 3rem rgba(0,0,0,0.4);
+}  
+
+.head{
+	width:100%;
+	height:8rem;
+	background-color:green;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	text-align:center;
+	
+}
+.head i{
+	font-size:2.5rem;
+	cursor:pointer;
+	padding: 0 2rem;
+}
+.date h4{
+	font-size:2rem;
+	font-weight:300;
+	text-transform:uppercase;
+	letter-spacing:0.1rem;
+	margin-bottom:0.5rem;
+}
+.date p{
+	font-size:1.4rem;
+}
+.dayheader{
+	display:flex;
+	align-items:center;
+	margin-top:0.9rem;
+	padding:0 0.4rem;
+}
+.dayheader h5{
+	width:calc(33.2rem/7);
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+.days{
+	width:100%;
+	display:flex;
+	flex-wrap:wrap;
+	padding:0.2rem;
+	
+}
+.days h4{
+	font-size:1.4rem;
+	margin:0.3rem;
+	width:calc(29.4rem/7);
+	height:4.4rem;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	transition:background-color 0.2s;
+}
+
+.days h4:hover:not(.today){
+	background-color:green;
+	border:0.2rem solid #777 transparent;
+	font-size: 1.8rem;
+	cursor:pointer;
+}
+
+.today{
+	background-color:#167e56;
+	cursor:pointer;
+}
+
+.prev-after{
+	opacity: 0.5;
+}
+ */
+
+/* Calendar <-------- 
+li{
+	list-style: none;
+}
+
+.calendar-container {
+	display: grid;
+	grid-template-columns: 65px auto;
+	grid-template-rows: auto;
+	grid-gap: 1px 1px;
+	grid-template-areas:
+		". header"
+		"timeslots-container main"
+}
+
+.weekdays,
+.daynumbers {
+	display:grid;
+	grid-template-columns: repeat(7, 1fr);
+}
+
+.weekdays li{
+	background: rgb(83, 83, 83);
+  	color: whitesmoke;
+}
+
+.daynumbers li{
+  	background: rgb(194, 194, 194);
+}
+
+.daynumbers li {
+  border-right: 1px solid black;
+  
+}
+
+.header {
+	grid-area: header;
+}
+
+.timeslots-container{
+	grid-area: timeslots-container;
+	justify-content: left;
+}
+
+.timeslots {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background:lightblue;
+}
+
+.timeslots li{
+	min-height:30px;
+	background:lightblue;
+}
+
+.timeslots li::after {
+	content: "";
+	position: absolute;
+	left: 10px;
+	width: 100%;
+	height: 1px;
+	background: #afafaf;
+	z-index: 1;
+}
+
+.event-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  
+  4 * 15 min intervals * 9 slots
+  4 * 9 = 27 
+  grid-template-rows: repeat(36, 1fr);
+  background: rgb(222, 223, 231);
+  grid-area: main;
+  position: relative;
+  white-space: nowrap;
+  background: repeating-linear-gradient(
+    to right,
+    transparent 0%,
+    transparent 14.2%,
+    gray 14.3%
+  );
+}
+*/
+
+
+
